@@ -1,4 +1,4 @@
-# playjson
+# PlayJSON
 
 ```jsonc
 {
@@ -11,7 +11,7 @@
         "hero": {
         }
       },
-      "onkeydown": "if (key == 'ArrowDown') hero.y += delta_time"
+      "update": "if (isKeyDown('ArrowDown')) hero.y += deltaTime"
     }
   }
 }
