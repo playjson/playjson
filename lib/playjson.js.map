@@ -1,1 +1,1 @@
-{"version":3,"file":"playjson.js","sourceRoot":"","sources":["../src/playjson.ts"],"names":[],"mappings":"","sourcesContent":[""]}
+{"version":3,"file":"playjson.js","sourceRoot":"","sources":["../src/playjson.ts"],"names":[],"mappings":"AAAA,MAAM,UAAU,QAAQ;AAExB,CAAC","sourcesContent":["export function playjson() {\n\n}"]}
