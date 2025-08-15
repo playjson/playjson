@@ -1,4 +1,4 @@
-export interface JsonGame {
+export type Game = {
     title?: string;
     width?: number;
     height?: number;
@@ -12,5 +12,5 @@ export interface JsonGame {
             };
         };
     };
-}
+};
 //# sourceMappingURL=interface.d.ts.map

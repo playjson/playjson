@@ -11,7 +11,7 @@
         "hero": {
         }
       },
-      "update": "if (isKeyDown('ArrowDown')) hero.y += deltaTime"
+      "update": "if (is_key_down('ArrowDown')) hero.y += delta_time"
     }
   }
 }
