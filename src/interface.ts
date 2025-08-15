@@ -14,11 +14,16 @@ type VerticesCollider = Vector2 & { type: 'vert'; vertices: Vector2[] };
 type Collider = RectangleCollider | CircleCollider | VerticesCollider;
 
 type Class = Vector2 & {
+  image?: string;
   scale?: number | Vector2;
   anchor?: Vector2;
   rotation?: number;
   alpha?: number;
   collider?: Collider;
+  static?: boolean;
+  sensor?: boolean;
+  velocity?: Vector2;
+  rotation_fixed?: boolean;
   oncollide?: Script;
 } & RuntimeBehavior;
 
