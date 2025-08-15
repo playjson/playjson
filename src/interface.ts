@@ -8,10 +8,13 @@ type RuntimeBehavior = {
   onclick?: Script;
 };
 
-type RectangleCollider = Vector2 & { type: 'rect'; width: number; height: number };
-type CircleCollider = Vector2 & { type: 'circle'; radius: number };
-type VerticesCollider = Vector2 & { type: 'vert'; vertices: Vector2[] };
-type Collider = RectangleCollider | CircleCollider | VerticesCollider;
+type Collider = Vector2 & {
+  type?: 'rectangle' | 'circle' | 'verticles';
+  width?: number;
+  height?: number;
+  radius?: number;
+  vertices?: Vector2[];
+};
 
 type Class = Vector2 & {
   image?: string;
