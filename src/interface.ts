@@ -8,11 +8,17 @@ type RuntimeBehavior = {
   onclick?: Script;
 };
 
+type RectangleCollider = Vector2 & { type: 'rect'; width: number; height: number };
+type CircleCollider = Vector2 & { type: 'circle'; radius: number };
+type VerticesCollider = Vector2 & { type: 'vert'; vertices: Vector2[] };
+type Collider = RectangleCollider | CircleCollider | VerticesCollider;
+
 type Class = Vector2 & {
   scale?: number | Vector2;
   anchor?: Vector2;
   rotation?: number;
   alpha?: number;
+  collider?: Collider;
   oncollide?: Script;
 } & RuntimeBehavior;
 
